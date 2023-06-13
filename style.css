@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgb(4, 4, 20);
+    color: #fff;
+}
+
+.stopWatchWraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stopWatchText {
+    text-shadow: 0 0 0px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #F2CD54, 0 0 30px #F2CD54, 0 0 40px #F2CD54, 0 0 55px #F2CD54, 0 0 75px #F2CD54, 1px 1px 1px rgba(206,89,55,0);
+    font-size: 40px;
+}
+
+.stopWatch {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 300px;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 40px;
+    background: -webkit-linear-gradient(left top, crimson 0%, #f90 80%);
+}
+
+.circle {
+    background: black;
+    width: 98%;
+    height: 98%;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 50px;
+}
+
+.btns button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #f90;
+    border: 2px solid #A1629C;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.btns button i {
+    font-size: 30px;
+
+}
+
+#min,
+#sec,
+#mSec {
+    width: 20%;
+    text-align: center;
+}
+
+.clr {
+    color: crimson !important;
+}
